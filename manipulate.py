@@ -62,5 +62,7 @@ for i in range(PWM.shape[1]):
 
 f,ax = plt.subplots(1)
 plot_logo(ax, scores)
-plt.show()
-
+plt.title(filename)
+plt.savefig(filename+'.png', dpi=300)
+#plt.show()
+plt.close()
