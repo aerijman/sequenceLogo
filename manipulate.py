@@ -60,7 +60,7 @@ scores = []
 for i in range(PWM.shape[1]):
     scores.append( [(nt_r[n], PWM[n,i]) for n in range(PWM.shape[0])] )
 
-f,ax = plt.subplots(1)
+f,ax = plt.subplots(1, figsize=(25,5))
 plot_logo(ax, scores)
 plt.title(filename)
 plt.savefig(filename+'.png', dpi=300)
